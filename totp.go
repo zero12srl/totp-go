@@ -171,12 +171,6 @@ func generateTOTP512(key, time, returnDigits string) (string, error){
   return result, nil
 }
 
-//===============
-//=== singleton
-//===============
-// a singleton implementation of a totp verifier that uses
-// the procedures defined above
-
 var TotpReference *TotpServer
 
 func init(){
